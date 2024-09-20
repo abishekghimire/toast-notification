@@ -2,7 +2,7 @@ const buttonClick = document.querySelector(".buttons");
 let toastBox = document.getElementById("toastBox");
 let successMsg = "Successfully submitted";
 let errorMsg = "Something went wrong";
-let invalidMsg = "Submit valid details";
+let invalidMsg = "Invalid details";
 
 function showToast(message, color) {
   let toast = document.createElement("div");
