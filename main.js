@@ -1,19 +1,19 @@
 const buttonClick = document.querySelector(".buttons");
-let toastBox = document.getElementById("toastBox");
-let successMsg = "Successfully submitted";
-let errorMsg = "Something went wrong";
-let invalidMsg = "Invalid details";
+const toastBox = document.getElementById("toastBox");
+const successMsg = "Successfully submitted";
+const errorMsg = "Something went wrong";
+const invalidMsg = "Invalid details";
 
 function showToast(message, color) {
-  let toast = document.createElement("div");
+  const toast = document.createElement("div");
   toast.classList.add("toast");
   toast.style.backgroundColor = color;
 
-  let messageContainer = document.createElement("div");
+  const messageContainer = document.createElement("div");
   messageContainer.classList.add("message");
   messageContainer.innerHTML = message;
 
-  let closeBtn = document.createElement("span");
+  const closeBtn = document.createElement("span");
   closeBtn.classList.add("close-btn");
   closeBtn.innerHTML = "<i class='fa-solid fa-xmark' ></i>";
 
